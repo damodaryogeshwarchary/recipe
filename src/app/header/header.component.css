@@ -1,0 +1,9 @@
+#container{
+    display: grid;
+    grid-template-columns: max-content max-content max-content 1fr max-content;
+    background-color: rgb(174, 174, 170);
+    
+}
+.container-box{
+    padding:2vw;
+}

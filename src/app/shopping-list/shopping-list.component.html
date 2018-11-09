@@ -1,0 +1,9 @@
+
+  Name <input type="text" name="fname" #txt>
+  Amount <input type="text" name="lname" #amt><br>
+  <input type="button" value="Add" (click)="_myService.onClickAdd(txt.value,amt.value)">
+  <input type="button" value="Clear" (click)="onClickClear()">
+  <input type="button" value="Delete" (click)="_myService.onClickDelete()">
+<div *ngFor="let item of _myService.efgh" (click)="_myService.onClickItem(item)">
+{{item.items}}{{item.amtOfItem}}
+</div>

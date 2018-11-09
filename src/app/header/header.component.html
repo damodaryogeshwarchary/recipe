@@ -1,0 +1,20 @@
+<div id="container">
+    <div class="container-box" >Recipe Book</div>
+    <div id="recipe" class="container-box" (click)="onClickRecipes()">Recipes</div>
+    <div id="shopping" class="container-box" (click)="onClickShopping()">Shopping list</div>
+    <div></div>
+    <div id="manage" class="container-box" (click)="onClickManage()">Manage
+        <div *ngIf= 'managing'>
+            
+        </div> 
+    </div>
+</div>
+<div *ngIf= 'recipes'>
+        <app-recipes></app-recipes>
+</div>
+<div *ngIf= '!recipes'>
+        <app-shopping-list></app-shopping-list>
+</div>
+<!-- <div *ngIf= 'shopping'>
+    <app-shopping-list></app-shopping-list>
+</div> -->

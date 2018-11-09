@@ -1,0 +1,26 @@
+<div id="container1">
+    <div>
+      <button>New Recipe</button>
+  
+      <div *ngFor="let item of list" (click)="onClickRecipeee(item)">
+        <div id="itembox">
+          <div id="namesbox">
+            {{item.dish}}
+            <div>
+              {{item.description}}
+            </div>
+          </div>
+          <div id="imagesbox">
+            <img id="imgs" src="{{item.img}}" alt="">
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div *ngIf="singleItem">
+    <app-recipe-item [recipeitem]="recitem">
+    
+    </app-recipe-item>
+    </div>
+  </div>
+  <!-- (click)= "onClickRecipeee(item)" -->
